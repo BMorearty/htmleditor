@@ -1,8 +1,8 @@
-<script>
+<script lang="typescript">
   import { onMount } from 'svelte';
 
-  let edit;
-  let html;
+  let edit: HTMLElement;
+  let html: HTMLElement;
 
   onMount(() => {
     edit.addEventListener('keypress', keypress);
@@ -52,7 +52,7 @@
     }
   }
 
-  function keypress(e) {
+  function keypress(e: KeyboardEvent) {
     // If the last character is a zero-width space, remove it
     const contentEditableHTML = edit.innerHTML;
     const lastCharCode = contentEditableHTML.charCodeAt(contentEditableHTML.length - 1);
