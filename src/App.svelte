@@ -1,4 +1,4 @@
-<script>
+<script lang="typescript">
 	import Editable from './Editable.svelte';
 </script>
 
