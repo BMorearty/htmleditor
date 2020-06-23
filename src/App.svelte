@@ -1,17 +1,11 @@
 <script>
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-
-	})
+	import Editable from './Editable.svelte';
 </script>
 
 <main>
 	<h1>Edit this div:</h1>
-	<div>
-		<div id="editable"></div>
-	</div>
 </main>
+<Editable />
 
 <style>
 	main {
