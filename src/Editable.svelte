@@ -94,18 +94,17 @@
 <style>
   #edit {
     background-color: cornflowerblue;
-    height: 500px;
     grid-area: "edit";
     padding: 1em;
   }
   #html {
     background-color: lightgray;
-    height: 500px;
     grid-area: "html";
   }
   #container {
     display: grid;
     grid-template-areas: "edit html";
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
   }
 </style>
