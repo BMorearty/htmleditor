@@ -10,7 +10,7 @@
     edit.focus();
   });
 
-  function handleEnter(e) {
+  function handleEnter(e: KeyboardEvent) {
     if (e.key === 'Enter') {
       if (window.getSelection) {
         const selection = window.getSelection();
@@ -87,23 +87,23 @@
 </script>
 
 <div id="container">
-  <div id="edit" bind:this={edit} contenteditable="true"></div>
-  <div id="html" bind:this={html}></div>
+  <div id="edit" bind:this="{edit}" contenteditable="true"></div>
+  <div id="html" bind:this="{html}"></div>
 </div>
 
 <style>
   #edit {
     background-color: cornflowerblue;
-    grid-area: "edit";
+    grid-area: 'edit';
     padding: 1em;
   }
   #html {
     background-color: lightgray;
-    grid-area: "html";
+    grid-area: 'html';
   }
   #container {
     display: grid;
-    grid-template-areas: "edit html";
+    grid-template-areas: 'edit html';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 500px;
   }
